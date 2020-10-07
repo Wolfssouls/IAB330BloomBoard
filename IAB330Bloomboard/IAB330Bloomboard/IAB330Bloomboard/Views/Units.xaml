@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IAB330Bloomboard.Views.Page1">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <!--  header -->
+                <RowDefinition Height="*"/>
+                <!-- unit nav title -->
+                <RowDefinition Height="0.5*"/>
+                <!-- unit nav -->
+                <RowDefinition Height="0.5*"/>
+                <!-- Announcement title -->
+                <RowDefinition Height="*"/>
+                <!-- Announcement message box -->
+                <RowDefinition Height="*"/>
+                <!-- weekly title -->
+                <RowDefinition Height="*"/>
+                <!-- weekly message box -->
+                <RowDefinition Height="*"/>
+                <!-- assessments title -->
+                <RowDefinition Height="*"/>
+                <!-- assessments message box -->
+                <RowDefinition Height="*"/>
+                <!-- spacer row -->
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <!-- Column spacer -->
+                <ColumnDefinition Width="*"/>
+
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2.5*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2.5*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2.5*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2.5*"/>
+                <ColumnDefinition Width="*"/>
+
+                <!-- Column spacer -->
+                <ColumnDefinition Width="*"/>
+
+            </Grid.ColumnDefinitions>
+            <!--  header -->
+            <Image Source="" BackgroundColor="#143458" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="11"/>
+
+            <Label Grid.Column="4" Grid.Row="0" FontSize="30" TextColor="White"  Text="Units" Grid.ColumnSpan="3" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+            <!-- unit nav title -->
+            <StackLayout Grid.Row="2" Grid.Column="8">
+                <BoxView Color="#143458" HeightRequest="50" HorizontalOptions="Fill" CornerRadius="10"/>
+                <Label HorizontalOptions="Center">Four</Label>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2"
+                 Grid.Column="6">
+                <BoxView Color="#143458" HeightRequest="50" HorizontalOptions="Fill"  CornerRadius="10"
+                 />
+                <Label HorizontalOptions="Center">Three</Label>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2"
+                 Grid.Column="4">
+                <BoxView Color="#143458" HeightRequest="50" HorizontalOptions="Fill"  CornerRadius="10"
+                 />
+                <Label HorizontalOptions="Center">Two</Label>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2"
+                 Grid.Column="2">
+                <BoxView Color="#143458" HeightRequest="50" HorizontalOptions="Fill"  CornerRadius="10"
+                 />
+                <Label HorizontalOptions="Center">One</Label>
+            </StackLayout>
+
+            <!-- Announcement title -->
+            <Label Grid.Column="3" Grid.Row="3" Grid.ColumnSpan="5" TextColor="#042F66" FontSize="20"  Text="Announcements" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" />
+            <Frame OutlineColor="#042f66" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="9" Margin="20,0,20,0" Padding="0" HeightRequest="36" CornerRadius="10">
+                <StackLayout>
+                    <Label Text="Dear IAB330 students, Welcome to Week 2!&#10;I hope you've all had a good weekend." TextColor="#8190A5" FontSize="14" Margin="15,0,15,0" />
+                </StackLayout>
+            </Frame>
+
+            <!-- weekly title -->
+            <Label Grid.Column="3" Grid.Row="5" Grid.ColumnSpan="5" TextColor="#042F66" FontSize="20"   Text="weekly" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+            <Frame OutlineColor="#042f66" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="9" Margin="20,0,20,0" Padding="0" HeightRequest="36" CornerRadius="10">
+                <StackLayout>
+                    <Label Text="Please watch the Lecture 2 video recordings.&#10;Then take part in the collective SWOT analysis Prepare for your first Tutorial&#10;(Optional) Review the lecture slides " TextColor="#8190A5" FontSize="14" Margin="15,0,15,0" />
+                </StackLayout>
+            </Frame>
+
+            <!-- assessments title -->
+            <Label Grid.Column="3" Grid.Row="7" Grid.ColumnSpan="5" TextColor="#042F66" FontSize="20"  Text="assessments" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" />
+            <Frame OutlineColor="#042f66" Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="9" Margin="20,0,20,0" Padding="0" HeightRequest="36" CornerRadius="10">
+                <StackLayout>
+                    <Label Text="This assessment task requires you to investigate a problem space and create a report that explains the need for and design of a mobile application." TextColor="#8190A5" FontSize="14" Margin="15,0,15,0" />
+                </StackLayout>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
