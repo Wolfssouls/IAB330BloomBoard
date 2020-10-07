@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IAB330Bloomboard.Views.AnnouncementPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#042F66" Padding="24" CornerRadius="0">
+                <Label Text="Announcement" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+
+            <SearchBar Placeholder="Search items..."
+           CancelButtonColor="Gray"
+           PlaceholderColor="Gray"
+           TextColor="Black"
+           HorizontalTextAlignment="Center"
+           FontSize="Medium" />
+            <ScrollView VerticalOptions="FillAndExpand">
+                <StackLayout>
+                    <Label Text="Announcement 1- from unit IAB330 &#x0a;Week 2" TextColor="#042F66" FontSize="Title" Padding="30,10,30,10" FontAttributes="Bold"/>
+                    <Label Text="Dear IAB330 students, &#x0a;Welcome to Week 2! I hope you've all had a good weekend.  ..." FontSize="16" Padding="30,0,30,0"/>
+
+                    <Label Text="Announcement 2- from unit IAB230 &#x0a;Late Assessment" TextColor="#042F66" FontSize="Title" Padding="30,10,30,10" FontAttributes="Bold"/>
+                    <Label Text="Hi everyone, &#x0a;Well done with your final exam. &#x0a;For those who have received the 'LATE' ... " FontSize="16" Padding="30,0,30,0"/>
+
+                    <Label Text="Announcement 3- from unit IFB399 &#x0a;Project Supervisor" TextColor="#042F66" FontSize="Title" Padding="30,10,30,10" FontAttributes="Bold"/>
+                    <Label Text="Dear students, &#x0a;I assume you are all have been in contact with your project supervisor (industry or academic) about their feedback form and the handover. If not and there are any ... " FontSize="16" Padding="30,0,30,0"/>
+                    <Label FontSize="16" Padding="30,24,30,0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <FormattedString.Spans>
+                                    <Span Text="Learn more at "/>
+                                    <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                                </FormattedString.Spans>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </StackLayout>
+            </ScrollView>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
