@@ -15,9 +15,9 @@ namespace IAB330Bloomboard.ViewModels
         public void TapViewModel()
         {
             // configure the TapCommand with a method
-            TapCommand = new Command(() =>
+            TapCommand = new Command(async() =>
             {
-                Application.Current.MainPage.Navigation.PushAsync(new Views.Page1());
+              await  Application.Current.MainPage.Navigation.PushAsync(new Views.Page1());
             });
         }
     }
