@@ -12,8 +12,18 @@ namespace IAB330Bloomboard.ViewModels
 {
     class ViewModelUnits : INotifyPropertyChanged
     {
+        public Command Navigate { get; }
         public event PropertyChangedEventHandler PropertyChanged;
-
-   
+        public ViewModelUnits()
+        {
+            Navigate = new Command( async () =>
+            {
+              await  Application.Current.MainPage.Navigation.PushAsync(new AnnouncementPage());
+            });
+        }
+       
+        
     }
-}
+
+    
+} 

@@ -18,9 +18,6 @@ namespace IAB330Bloomboard.Views
 
         }
 
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
-        {
-            Application.Current.MainPage.Navigation.PushAsync(new AnnouncementPage());
-        }
+        
     }
 }
