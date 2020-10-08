@@ -18,24 +18,9 @@ namespace IAB330Bloomboard.Views
 
         }
 
-        ICommand tapCommand;
-        public void TapViewModel()
+        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            // configure the TapCommand with a method
-            tapCommand = new Command(OnTapped);
-        }
-        public ICommand TapCommand
-        {
-            get
-            {
-                return tapCommand;
-            }
-        }
-
-        void OnTapped()
-        {
-            Navigation.PushAsync(new AnnouncementPage());
-
+            Application.Current.MainPage.Navigation.PushAsync(new AnnouncementPage());
         }
     }
 }
