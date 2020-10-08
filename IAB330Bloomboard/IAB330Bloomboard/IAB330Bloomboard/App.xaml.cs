@@ -10,7 +10,7 @@ namespace IAB330Bloomboard
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage( new MainPage());
         }
 
         protected override void OnStart()
@@ -24,5 +24,8 @@ namespace IAB330Bloomboard
         protected override void OnResume()
         {
         }
+
+
+
     }
 }

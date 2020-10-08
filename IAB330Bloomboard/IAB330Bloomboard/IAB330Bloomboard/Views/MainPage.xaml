@@ -54,11 +54,15 @@
         <Label Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" TextColor="#042f66" FontSize="20" Text="IAB330" FontAttributes="Bold" VerticalOptions="End" />
 
         <!-- row 4-->
-
-        <StackLayout Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="6"  >
+        
+            <StackLayout Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="6"  >
+            <StackLayout.GestureRecognizers>
+                <TapGestureRecognizer Command="{Binding TapCommand}"/>
+            </StackLayout.GestureRecognizers>
             <Label Text="Mobile Application Development" FontSize="Body"  TextColor="#47525E" />
             <Label Text="Welcome to Semester 2, 2020 and the IAB330 - Mobile Application Development unit!"  FontSize="12" TextColor="#8190A5" Margin="0,0,30,0"/>
         </StackLayout>
+        
 
         <!-- row 5-->
         <Frame OutlineColor="#042f66" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="7" Margin="20,0,20,0" Padding="0" HeightRequest="36" CornerRadius="10">

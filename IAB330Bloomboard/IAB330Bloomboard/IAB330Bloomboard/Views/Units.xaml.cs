@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,6 +15,27 @@ namespace IAB330Bloomboard.Views
         public Page1()
         {
             InitializeComponent();
+
+        }
+
+        ICommand tapCommand;
+        public void TapViewModel()
+        {
+            // configure the TapCommand with a method
+            tapCommand = new Command(OnTapped);
+        }
+        public ICommand TapCommand
+        {
+            get
+            {
+                return tapCommand;
+            }
+        }
+
+        void OnTapped()
+        {
+            Navigation.PushAsync(new AnnouncementPage());
+
         }
     }
 }
