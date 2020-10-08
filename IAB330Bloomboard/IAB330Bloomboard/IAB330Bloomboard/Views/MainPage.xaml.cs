@@ -16,19 +16,5 @@ namespace IAB330Bloomboard
             InitializeComponent();
         }
 
-        private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
-        {
-            Application.Current.MainPage.Navigation.PushAsync(new Views.Page1());
-        }
-
-        private void OnImageButtonClicked(object sender, EventArgs e)
-        {
-            Application.Current.MainPage.Navigation.PushAsync(new Views.Page1());
-        }
- 
-          private void TapGestureRecognizer_Announcements(object sender, EventArgs e)
-        {
-            Application.Current.MainPage.Navigation.PushAsync(new Views.AnnouncementPage());
-        }
     }
 }
