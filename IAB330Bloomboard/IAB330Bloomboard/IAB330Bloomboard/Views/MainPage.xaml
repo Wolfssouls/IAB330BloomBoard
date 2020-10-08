@@ -48,7 +48,7 @@
 
         <!-- row 2-->
 
-        <Image Source="unitimage" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="5" />
+        <ImageButton Source="unitimage" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="5" Clicked="OnImageButtonClicked" BackgroundColor="Transparent" />
 
         <!-- row 3-->
         <Label Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" TextColor="#042f66" FontSize="20" Text="IAB330" FontAttributes="Bold" VerticalOptions="End" />
