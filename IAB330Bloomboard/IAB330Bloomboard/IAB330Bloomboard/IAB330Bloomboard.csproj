@@ -20,6 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\Grades.xaml.cs">
+      <DependentUpon>Grades.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\Units.xaml.cs">
       <DependentUpon>Units.xaml</DependentUpon>
     </Compile>
