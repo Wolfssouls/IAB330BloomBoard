@@ -85,7 +85,9 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\pie.PNG" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\IAB330Bloomboard\IAB330Bloomboard.csproj">
       <Project>{166CD39A-3F70-41A5-8661-4385E9D2940E}</Project>
