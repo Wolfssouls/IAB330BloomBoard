@@ -7,14 +7,14 @@ using Xamarin.Forms;
 
 namespace IAB330Bloomboard.ViewModels
 {
-    class ViewModelMainPage : INotifyPropertyChanged
+    class ViewModelGrades : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
         public Command NavigateUnits { get; }
         public Command NavigateAnnouncements { get; }
 
 
-        public ViewModelMainPage()
+        public ViewModelGrades()
         {
             NavigateUnits = new Command(async () =>
             {
