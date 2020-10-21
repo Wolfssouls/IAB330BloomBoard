@@ -25,16 +25,10 @@
 
                     <Label Text="Announcement 3- from unit IFB399 &#x0a;Project Supervisor" TextColor="#042F66" FontSize="Title" Padding="30,10,30,10" FontAttributes="Bold"/>
                     <Label Text="Dear students, &#x0a;I assume you are all have been in contact with your project supervisor (industry or academic) about their feedback form and the handover. If not and there are any ... " FontSize="16" Padding="30,0,30,0"/>
-                    <Label FontSize="16" Padding="30,24,30,0">
-                        <Label.FormattedText>
-                            <FormattedString>
-                                <FormattedString.Spans>
-                                    <Span Text="Learn more at "/>
-                                    <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                                </FormattedString.Spans>
-                            </FormattedString>
-                        </Label.FormattedText>
-                    </Label>
+                    
+                    <Label Text="Announcement 4- from unit IAB204 &#x0a; BA Toolkit for Assignment 1" TextColor="#042F66" FontSize="Title" Padding="30,10,30,10" FontAttributes="Bold"/>
+                    <Label Text="Dear Students &#x0a; We have uploaded a toolkit for your assignment 1." FontSize="16" Padding="30,0,30,0"/>
+                    
                 </StackLayout>
             </ScrollView>
 
