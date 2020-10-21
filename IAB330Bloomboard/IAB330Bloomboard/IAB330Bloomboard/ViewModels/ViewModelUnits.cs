@@ -14,12 +14,18 @@ namespace IAB330Bloomboard.ViewModels
     {
         public event PropertyChangedEventHandler PropertyChanged;
         public Command Navigate { get; }
+        public Command navigateGrades { get; }
 
         public ViewModelUnits()
         {
             Navigate = new Command( async () =>
             {
               await  Application.Current.MainPage.Navigation.PushAsync(new AnnouncementPage());
+            });
+
+            navigateGrades = new Command(async () =>
+            {
+                await Application.Current.MainPage.Navigation.PushAsync(new Grades());
             });
         }
        

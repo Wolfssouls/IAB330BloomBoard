@@ -105,6 +105,9 @@
             <Label Grid.Column="3" Grid.Row="7" Grid.ColumnSpan="5" TextColor="#042F66" FontSize="20"  Text="assessments" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" />
             <Frame OutlineColor="#042f66" Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="9" Margin="20,0,20,0" Padding="0" HeightRequest="36" CornerRadius="10">
                 <StackLayout>
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding navigateGrades}"/>
+                    </StackLayout.GestureRecognizers>
                     <Label Text="This assessment task requires you to investigate a problem space and create a report that explains the need for and design of a mobile application." TextColor="#8190A5" FontSize="14" Margin="15,0,15,0" />
                 </StackLayout>
             </Frame>
