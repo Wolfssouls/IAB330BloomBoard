@@ -48,7 +48,7 @@
 
         <!-- row 1-->
 
-        <Label TextColor="#042f66" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="3" Text="  IAB 330" FontAttributes="Bold" FontSize="40" VerticalOptions="CenterAndExpand"/>
+        <Label TextColor="#042f66" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="3" Text="{Binding unitNameTitle}" FontAttributes="Bold" FontSize="40" VerticalOptions="CenterAndExpand"/>
 
         <!-- row 2-->
 
@@ -56,7 +56,7 @@
             <StackLayout.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding NavigateUnits}" />
             </StackLayout.GestureRecognizers>
-            <Label TextColor="#042f66" FontSize="20" Text="Results for Sri!" VerticalOptions="End" Margin="0,10,0,0" />
+            <Label TextColor="#042f66" FontSize="20" Text="{Binding pageHeadingTitle}" VerticalOptions="End" Margin="0,10,0,0" />
         </StackLayout>
 
         <!-- row 3-->
@@ -65,8 +65,8 @@
             <StackLayout.GestureRecognizers>
                 <TapGestureRecognizer Command="{Binding NavigateUnits}" />
             </StackLayout.GestureRecognizers>
-            <Label Text="More grades stuff" FontSize="16"  TextColor="#47525E" />
-            <Label Text="Well done you have gotten a very good grade i am very impressed, you are very smart Sri!"  FontSize="12" TextColor="#8190A5" Margin="0,0,30,0"/>
+            <Label Text="{Binding gradeInfoTitle}" FontSize="16"  TextColor="#47525E" />
+            <Label Text="{Binding gradeInfoText}"  FontSize="12" TextColor="#8190A5" Margin="0,0,30,0"/>
         </StackLayout>
 
         <!-- row 4-->
