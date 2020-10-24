@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IAB330Bloomboard.Models;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,8 +10,11 @@ namespace IAB330Bloomboard
         public App()
         {
             InitializeComponent();
-
-            MainPage = new NavigationPage( new Views.MainPage());
+            
+            MainPage = new NavigationPage(new Views.MainPage())
+            {
+                BarBackgroundColor = Color.FromHex("#042f66")
+            };
         }
 
         protected override void OnStart()

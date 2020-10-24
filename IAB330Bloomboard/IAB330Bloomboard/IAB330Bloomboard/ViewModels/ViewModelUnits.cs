@@ -35,8 +35,18 @@ namespace IAB330Bloomboard.ViewModels
 
         }
 
-        TextInfo Announcments = new TextInfo("Dear IAB330 students, Welcome to Week 2!&#10;I hope you've all had a good weekend.", DateTime.Now, "Announcments");
-        
+        TextInfo Announcments = new TextInfo("Dear IAB330 students, Welcome to Week 2. \nI hope you've all had a good weekend.", DateTime.Now, "Announcments");
+        Heading heading = new Heading("Units", "#042f66");
+
+        public string headingTitle
+        {
+            get => heading.Title;
+        }
+
+        public string headingColour
+        {
+            get => heading.Colour;
+        }
 
         public string AnnouncmentsText
         {
@@ -48,9 +58,10 @@ namespace IAB330Bloomboard.ViewModels
         {
             get => Announcments.Title;
 
+
         }
 
-        TextInfo Weekly = new TextInfo("Please watch the Lecture 2 video recordings.&#10;Then take part in the collective SWOT analysis Prepare for your first Tutorial&#10;(Optional) Review the lecture slides ", DateTime.Now, "Weekly");
+        TextInfo Weekly = new TextInfo("Please watch the Lecture 2 video recordings. \nThen take part in the collective SWOT analysis Prepare for your first Tutorial \n(Optional) Review the lecture slides ", DateTime.Now, "Weekly");
 
 
         public string WeeklyText
