@@ -1,9 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="IAB330Bloomboard.Views.Page1"
              xmlns:local="clr-namespace:IAB330Bloomboard.ViewModels">
 
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" BackgroundColor="{Binding headingColour}">
+            <Label Text="{Binding headingTitle}" TextColor="#ffffff" FontSize="25" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="-70,0,0,0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+    
     <ContentPage.BindingContext>
         <local:ViewModelUnits/>
     </ContentPage.BindingContext>
@@ -51,30 +58,33 @@
 
             </Grid.ColumnDefinitions>
             <!--  header -->
-            <Image Source="" BackgroundColor="#143458" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="11"/>
+            <!--<Image Source="" BackgroundColor="#143458" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="11"/>-->
 
-            <Label Grid.Column="4" Grid.Row="0" FontSize="30" TextColor="White"  Text="Units" Grid.ColumnSpan="3" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>
+            <!-- <Label Grid.Column="4" Grid.Row="0" FontSize="30" TextColor="White"  Text="Units" Grid.ColumnSpan="3" VerticalOptions="CenterAndExpand" HorizontalOptions="Center"/>-->
             <!-- unit nav title -->
-            <StackLayout Grid.Row="2" Grid.Column="8">
+
+
+
+            <StackLayout Grid.Row="1" Grid.Column="8">
                 <BoxView Color="#143458" HeightRequest="50" HorizontalOptions="Fill" CornerRadius="10"/>
                 <Label HorizontalOptions="Center">Four</Label>
             </StackLayout>
 
-            <StackLayout Grid.Row="2"
+            <StackLayout Grid.Row="1"
                  Grid.Column="6">
                 <BoxView Color="#143458" HeightRequest="50" HorizontalOptions="Fill"  CornerRadius="10"
                  />
                 <Label HorizontalOptions="Center">Three</Label>
             </StackLayout>
 
-            <StackLayout Grid.Row="2"
+            <StackLayout Grid.Row="1"
                  Grid.Column="4">
                 <BoxView Color="#143458" HeightRequest="50" HorizontalOptions="Fill"  CornerRadius="10"
                  />
                 <Label HorizontalOptions="Center">Two</Label>
             </StackLayout>
 
-            <StackLayout Grid.Row="2"
+            <StackLayout Grid.Row="1"
                  Grid.Column="2">
                 <BoxView Color="#143458" HeightRequest="50" HorizontalOptions="Fill"  CornerRadius="10"
                  />
