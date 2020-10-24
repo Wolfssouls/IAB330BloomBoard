@@ -30,7 +30,16 @@ namespace IAB330Bloomboard.ViewModels
 
         }
         TextInfo userName = new TextInfo(" ", DateTime.Now, "Welcome Sri");
+        Heading heading = new Heading("QUT Bloom", "#042f66");
+        public string headingTitle
+        {
+            get => heading.Title;
+        }
 
+        public string headingColour
+        {
+            get => heading.Colour;
+        }
 
         public string userNameText
         {

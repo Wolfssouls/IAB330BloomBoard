@@ -3,19 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="IAB330Bloomboard.Views.MainPage"
              xmlns:local="clr-namespace:IAB330Bloomboard.ViewModels">
+
+    
+
     <ContentPage.BindingContext>
         <local:ViewModelMainPage/>
     </ContentPage.BindingContext>
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal" BackgroundColor="{Binding headingColour}">
+            <Label Text="{Binding headingTitle}" TextColor="#ffffff" FontSize="25" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"  />
+        </StackLayout>
+    </NavigationPage.TitleView>
 
 
     <Grid>
         <Grid.RowDefinitions>
             <!--  row 0-->
-            <RowDefinition Height="1.75*"/>
-            <!-- row 1 -->
             <RowDefinition Height="2*"/>
-            <!-- row 2 -->
+            <!-- row 1 -->
             <RowDefinition Height="6*"/>
+            <!-- row 2 -->
+            <RowDefinition Height="1*"/>
             <!-- row 3 -->
             <RowDefinition Height="1*"/>
             <!-- row 4 -->
@@ -42,18 +51,18 @@
         </Grid.ColumnDefinitions>
 
         <!-- row 0-->
-        <Image Source="" BackgroundColor="#042f66" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="7" />
+        <!--<Image Source="" BackgroundColor="#042f66" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="7" />
 
         <Label Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="3" TextColor="#ffffff" Text="QUT Bloom" FontSize="25" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
-
+        -->
         <!-- row 1-->
-        <Image Source="sri" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" Margin="0,15,0,15"/>
+        <Image Source="sri" Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2" Margin="0,15,0,15"/>
 
-        <Label Grid.Column="3" Grid.Row="1" Grid.ColumnSpan="3" Text="{Binding userNameTitle}" FontSize="20" VerticalOptions="CenterAndExpand"/>
+        <Label Grid.Column="3" Grid.Row="0" Grid.ColumnSpan="3" Text="{Binding userNameTitle}" FontSize="20" VerticalOptions="CenterAndExpand"/>
 
         <!-- row 2-->
 
-        <ImageButton Source="unitimage" Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="5" Command="{Binding NavigateUnits}" BackgroundColor="Transparent" />
+        <ImageButton Source="unitimage" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="5" Command="{Binding NavigateUnits}" BackgroundColor="Transparent" />
 
         <!-- row 3-->
         <StackLayout Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2">
