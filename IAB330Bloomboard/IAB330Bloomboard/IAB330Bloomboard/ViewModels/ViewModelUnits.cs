@@ -28,8 +28,6 @@ namespace IAB330Bloomboard.ViewModels
                 await Application.Current.MainPage.Navigation.PushAsync(new Grades());
             });
         }
-       
-        
     }
 
     
