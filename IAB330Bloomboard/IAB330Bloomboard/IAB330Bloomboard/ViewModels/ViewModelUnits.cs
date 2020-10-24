@@ -35,17 +35,54 @@ namespace IAB330Bloomboard.ViewModels
 
         }
 
-        TextInfo textInfo = new TextInfo("Dear IAB330 students, Welcome to Week 2!&#10;I hope you've all had a good weekend.", DateTime.Now, "Announcments");
+        TextInfo Announcments = new TextInfo("Dear IAB330 students, Welcome to Week 2!&#10;I hope you've all had a good weekend.", DateTime.Now, "Announcments");
         
 
-        public string TextInfo
+        public string AnnouncmentsText
         {
-            get => textInfo.Text;
+            get => Announcments.Text;
+
         }
-       
+
+        public string AnnouncmentsTitle
+        {
+            get => Announcments.Title;
+
+        }
+
+        TextInfo Weekly = new TextInfo("Please watch the Lecture 2 video recordings.&#10;Then take part in the collective SWOT analysis Prepare for your first Tutorial&#10;(Optional) Review the lecture slides ", DateTime.Now, "Weekly");
 
 
-       
+        public string WeeklyText
+        {
+            get => Weekly.Text;
+
+        }
+
+        public string WeeklyTitle
+        {
+            get => Weekly.Title;
+
+        }
+
+        TextInfo assessments = new TextInfo("This assessment task requires you to investigate a problem space and create a report that explains the need for and design of a mobile application.", DateTime.Now, "Assessments");
+
+
+        public string AssessmentsText
+        {
+            get => assessments.Text;
+
+        }
+
+        public string AssessmentsTitle
+        {
+            get => assessments.Title;
+
+        }
+
+
+
+
 
 
     }
