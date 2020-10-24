@@ -81,14 +81,14 @@
                 <Label HorizontalOptions="Center">One</Label>
             </StackLayout>
 
-            <!-- Announcement title -->
+            <!-- Announcement title  -->
             <Label Grid.Column="3" Grid.Row="3" Grid.ColumnSpan="5" TextColor="#042F66" FontSize="20"  Text="Announcements" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" />
             <Frame OutlineColor="#042f66" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="9" Margin="20,0,20,0" Padding="0" HeightRequest="36" CornerRadius="10" >
                 <StackLayout>
                     <StackLayout.GestureRecognizers>
                         <TapGestureRecognizer Command="{Binding Navigate}"/>
                     </StackLayout.GestureRecognizers>
-                    <Label Text="Dear IAB330 students, Welcome to Week 2!&#10;I hope you've all had a good weekend." TextColor="#8190A5" FontSize="14" Margin="15,0,15,0" />
+                    <Label Text="{Binding TextInfo}" TextColor="#8190A5" FontSize="14" Margin="15,0,15,0" />
                     
                 </StackLayout>
             </Frame>

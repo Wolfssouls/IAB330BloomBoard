@@ -1,7 +1,9 @@
-﻿using IAB330Bloomboard.Views;
+﻿using IAB330Bloomboard.Models;
+using IAB330Bloomboard.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -18,16 +20,34 @@ namespace IAB330Bloomboard.ViewModels
 
         public ViewModelUnits()
         {
-            Navigate = new Command( async () =>
-            {
-              await  Application.Current.MainPage.Navigation.PushAsync(new AnnouncementPage());
-            });
+            Navigate = new Command(async () =>
+           {
+               await Application.Current.MainPage.Navigation.PushAsync(new AnnouncementPage());
+           });
 
             navigateGrades = new Command(async () =>
             {
                 await Application.Current.MainPage.Navigation.PushAsync(new Grades());
             });
+
+
+
+
         }
+
+        TextInfo textInfo = new TextInfo("Dear IAB330 students, Welcome to Week 2!&#10;I hope you've all had a good weekend.", DateTime.Now, "Announcments");
+        
+
+        public string TextInfo
+        {
+            get => textInfo.Text;
+        }
+       
+
+
+       
+
+
     }
 
     

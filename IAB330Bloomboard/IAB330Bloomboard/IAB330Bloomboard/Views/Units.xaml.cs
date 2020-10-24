@@ -15,7 +15,7 @@ namespace IAB330Bloomboard.Views
         public Page1()
         {
             InitializeComponent();
-
+            
         }
 
         
