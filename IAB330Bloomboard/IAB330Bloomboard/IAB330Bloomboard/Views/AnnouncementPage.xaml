@@ -29,16 +29,16 @@
             <ScrollView VerticalOptions="FillAndExpand">
                 <StackLayout>
                     <Label Text="{Binding AnnouncmentsTitle1}" TextColor="#042F66" FontSize="Title" Padding="30,10,30,10" FontAttributes="Bold"/>
-                    <Label Text="{Binding AnnouncmentsText1}" FontSize="16" Padding="30,0,30,0"/>
+                    <Label Text="{Binding AnnouncmentsText1}" FontSize="16" TextColor="#8190A5" Padding="30,0,30,0"/>
 
                     <Label Text="{Binding AnnouncmentsTitle2}" TextColor="#042F66" FontSize="Title" Padding="30,10,30,10" FontAttributes="Bold"/>
-                    <Label Text="{Binding AnnouncmentsText2}" FontSize="16" Padding="30,0,30,0"/>
+                    <Label Text="{Binding AnnouncmentsText2}" FontSize="16" TextColor="#8190A5" Padding="30,0,30,0"/>
 
                     <Label Text="{Binding AnnouncmentsTitle3}" TextColor="#042F66" FontSize="Title" Padding="30,10,30,10" FontAttributes="Bold"/>
-                    <Label Text="{Binding AnnouncmentsText3} " FontSize="16" Padding="30,0,30,0"/>
+                    <Label Text="{Binding AnnouncmentsText3} " FontSize="16" TextColor="#8190A5" Padding="30,0,30,0"/>
 
                     <Label Text="{Binding AnnouncmentsTitle4}" TextColor="#042F66" FontSize="Title" Padding="30,10,30,10" FontAttributes="Bold"/>
-                    <Label Text="{Binding AnnouncmentsText4}" FontSize="16" Padding="30,0,30,0"/>
+                    <Label Text="{Binding AnnouncmentsText4}" FontSize="16" TextColor="#8190A5" Padding="30,0,30,0"/>
                     
                 </StackLayout>
             </ScrollView>
