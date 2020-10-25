@@ -50,11 +50,11 @@
        <!-- <Image Source="" BackgroundColor="#042f66" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="7" />
 
         <Label Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="3" TextColor="#ffffff" Text="Grades" FontSize="25" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
-
+-->
         
 
-       <Label TextColor="#042f66" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="3" Text="{Binding unitNameTitle}" FontAttributes="Bold" FontSize="40" VerticalOptions="CenterAndExpand"/>
--->
+       <Label TextColor="#042f66" Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="3" Text="{Binding PageUniTitle}" FontAttributes="Bold" FontSize="40" VerticalOptions="CenterAndExpand"/>
+
         <!-- row 2-->
 
         <StackLayout Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="3">

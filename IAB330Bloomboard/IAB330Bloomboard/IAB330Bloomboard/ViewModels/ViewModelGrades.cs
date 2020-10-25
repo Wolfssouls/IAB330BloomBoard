@@ -32,7 +32,7 @@ namespace IAB330Bloomboard.ViewModels
 
         TextInfo gradeInfo = new TextInfo("Well done, you have gotten a very good grade i am very impressed, you are very smart Sri!", DateTime.Now, "More Grade Information");
 
-        Heading heading = new Heading("IAB 330", "#042f66");
+        Heading heading = new Heading("Grades", "#042f66");
         public string headingTitle
         {
             get => heading.Title;
@@ -42,13 +42,30 @@ namespace IAB330Bloomboard.ViewModels
         {
             get => heading.Colour;
         }
+
+        public string gradeInfoTitle
+        {
+            get => gradeInfo.Title;
+
+        }
         public string gradeInfoText
         {
             get => gradeInfo.Text;
 
         }
+        Heading PageUnit = new Heading("IAB 330", "#042f66");
 
-       
+        public string PageUniTitle
+        {
+            get => PageUnit.Title;
+
+        }
+        public string PageUnitColour
+        {
+            get => PageUnit.Colour;
+
+        }
+
 
         TextInfo pageHeading = new TextInfo(" ", DateTime.Now, "Results for Sri!");
 
